@@ -1,0 +1,14 @@
+name: Security for Next.js - DAST for web with OASP ZAP
+
+on: [push]
+
+jobs:
+  dast_scan:
+    runs-on: ubuntu-latest
+    name: DAST (Dynamic Application Security Testing) with OASP ZAP
+    steps:
+      - name: ZAP Scan
+        uses: zaproxy/action-full-scan@v0.10.0
+        with:
+          target: 'https://uptime-644994207224.europe-north1.run.app'
+          artifact-name: 'zap_scan_report'
