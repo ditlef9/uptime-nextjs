@@ -11,7 +11,7 @@
   "dependencies": {
     "next": "15.2.4",
     "next-auth": "latest",
-    "nodemailer": "latest",
+    "nodemailer": "6.10.1",
     "pg": "latest",
     "react": "latest",
     "react-dom": "latest"
